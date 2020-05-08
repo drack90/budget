@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://kit.fontawesome.com/ca023ea9fc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+<nav >
+  <div class="wrapper">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo">Budget's</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <div class="headerMenu">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="bills.html">Счета</a></li>
+          <li><a href="buyList.html">Список покупок</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="bills.html">Счета</a></l
+          <li><a href="buyList.html">Список покупок</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</nav>
+
+<ul class="collection">
+  <li class="collection-item buyList" id="buyList" >
+    <p class="title buyDate">Дата закупки</p>
+    <hr>
+    <p class="buyListComment"> Комментарий</p>
+  </li>
+  <li class="collection-item buyList" id="buyList1" >
+    <p class="title buyDate">08.05.2020</p>
+    <hr>
+    <p class="buyListComment">Закупка по случаю зарплаты.</p>
+  </li>
+
+</ul>
+
+
+<div class="addTransaction fixed-action-btn">
+  <a href="../addTranzaction.html" class="btn-floating btn-large waves-effect waves-light blue darken-4"><i class="material-icons">add</i></a>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script type="application/javascript" src="js/main.js"></script>
+</html>

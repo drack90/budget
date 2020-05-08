@@ -1,0 +1,172 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://kit.fontawesome.com/ca023ea9fc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+<nav >
+  <div class="wrapper">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo">Budget's</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <div class="headerMenu">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="bills.html">Счета</a></li>
+          <li><a href="buyList.html">Список покупок</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="bills.html">Счета</a></l
+          <li><a href="buyList.html">Список покупок</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</nav>
+
+<!--как сделать кольцевую диаграмму-->
+<!--https://devacademy.ru/article/krugovaia-i-koltsevaia-svg-diagrammy-na-html5-s-nulia/-->
+<!--donut-diagramm-->
+<section class="wrapper">
+  <div class="graphic">
+    <div class="budget-graphic">
+      <div class="circle-diagram">
+        <span class="diagram-value">74</span><span class="diagram-percent">%</span></div>
+    </div>
+    <div class="wrapper">
+      <div class="budget-data">
+        <span class="budget-planned">10000</span>
+        <span>/</span>
+        <span class="budget-consumed">7500</span>
+        <div>
+          <a href="#correctionBillModal"
+             class="btn waves-effect waves-light blue darken-4 modal-trigger">
+            Задать бюджет</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="wrapper">
+  <div class="recentTransactions z-depth-2 center">
+    <table class="bordered" cols="2">
+      <caption>Последние транзации</caption>
+      <tr>
+        <td>
+          <img class="transactionIcon" src="ico/transactionGreen.png" alt="">
+        </td>
+        <td>
+          <span class="tableCategoty">Категория</span><br>
+          <span class="tableComment">Описание</span>
+        </td>
+        <td class="tableSumm">сумма</td>
+      </tr>
+      <tr>
+        <td>
+          <img class="transactionIcon" src="ico/transactionGreen.png" alt="">
+        </td>
+        <td>
+          <span class="tableCategoty">Домашние расходы</span><br>
+          <span class="tableComment">Купил колбасу, и вкусняхи. А так же сигареты и бухло</span>
+        </td>
+        <td class="tableSumm">-1990</td>
+      </tr>
+      <tr>
+        <td>
+          <img class="transactionIcon" src="ico/transactionGreen.png" alt="">
+        </td>
+        <td>
+          <span class="tableCategoty">Заправка</span><br>
+          <span class="tableComment">25 литров 92-го бензина</span>
+        </td>
+        <td class="tableSumm">-999.96</td>
+      </tr>
+    </table>
+    <a class="waves-effect waves-light btn blue darken-4 center">Посмотреть все транзакции</a>
+  </div>
+</section>
+<section class="wrapper">
+  <h5>Счета</h5>
+  <div class="accountBill">
+
+
+    <div class="bill z-depth-2">
+      <div class="card-name">
+        <span class="billName">Имя карты</span>
+      </div>
+      <div class="billContent">
+        <img class="billIcon" src="img/icon/bill.png" alt="">
+        <div class="billSumm"><h6>998.65 руб</h6></div>
+      </div>
+    </div>
+    <div class="bill z-depth-2">
+      <div class="card-name">
+        <span class="billName">Имя карты</span>
+      </div>
+      <div class="billContent">
+        <img class="billIcon" src="img/icon/bill.png" alt="">
+        <div class="billSumm"><h6>998.65 руб</h6></div>
+      </div>
+    </div>
+    <div class="bill z-depth-2">
+      <div class="card-name">
+        <span class="billName">Имя карты</span>
+      </div>
+      <div class="billContent">
+        <img class="billIcon" src="img/icon/bill.png" alt="">
+        <div class="billSumm"><h6>998.65 руб</h6></div>
+      </div>
+    </div>
+    <div class="bill z-depth-2">
+      <div class="card-name">
+        <span class="billName">Имя карты</span>
+      </div>
+      <div class="billContent">
+        <img class="billIcon" src="img/icon/bill.png" alt="">
+        <div class="billSumm"><h6>998.65 руб</h6></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section>
+  <div class="noContent"></div>
+</section>
+
+
+<!--модальные окна-->
+<div id="correctionBillModal" class="modal bottom-sheet">
+  <div class="modal-content">
+    <div class="input-field">
+      <input id="correctionBillSumm" type="number">
+      <label for="correctionBillSumm">Введите сумму бюджета на месяц</label>
+      <a href="#" class="btn waves-effect waves-light blue darken-4">Отправить <i class="material-icons right">send</i></a>
+    </div>
+  </div>
+</div>
+
+<div class="addTransaction fixed-action-btn">
+  <a href="../addTranzaction.html" class="btn-floating btn-large waves-effect waves-light blue darken-4"><i class="material-icons">add</i></a>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<script type="application/javascript" src="js/main.js"></script>
+</html>
